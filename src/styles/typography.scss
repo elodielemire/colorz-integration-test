@@ -1,0 +1,165 @@
+$main-color: #F0380F;
+$secondary-color: #F4F4F4;
+$black: #18181B;
+
+// Colors
+.main-color {
+  color: $main-color;
+}
+.bg-main-color {
+  background-color: $main-color;
+}
+.bg-secondary-color {
+  background-color: $secondary-color;
+}
+
+// Font-weight
+.fw-3 {
+  font-weight: 300;
+}
+.fw-4 {
+  font-weight: 400;
+}
+.fw-7 {
+  font-weight: 700;
+}
+
+// Mixins
+@mixin fs-10-lh-12 {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+@mixin fs-29-lh-35 {
+  font-size: 29px;
+  line-height: 35px;
+}
+
+@mixin fs-12-lh-14 {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@mixin fs-24-lh-29 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@mixin fs-16-lh-20 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin fs-16-lh-19 {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin fs-16-lh-24 {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@mixin fs-52-lh-60 {
+  font-size: 52px;
+  line-height: 60px;
+}
+
+@mixin fs-19-lh-23 {
+  font-size: 19px;
+  line-height: 23px;
+}
+
+@mixin fs-44-lh-54 {
+  font-size: 44px;
+  line-height: 54px;
+}
+
+@mixin fs-15-lh-18 {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+@mixin fs-22-lh-34 {
+  font-size: 22px;
+  line-height: 34px;
+}
+
+@mixin fs-40-lh-56 {
+  font-size: 40px;
+  line-height: 56px;
+}
+
+@mixin fs-30-lh-42 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+
+// Font-size & line-height responsive
+.fs-12-lh-14--responsive {
+  @include fs-12-lh-14;
+  @media (min-width: 768px) {
+    @include fs-19-lh-23;
+  }
+}
+
+.fs-29-lh-35--responsive {
+  @include fs-29-lh-35;
+  @media (min-width: 768px) {
+    @include fs-44-lh-54;
+  }
+}
+
+.fs-10-lh-12--responsive {
+  @include fs-10-lh-12;
+  @media (min-width: 768px) {
+    @include fs-15-lh-18;
+  }
+}
+
+.fs-16-lh-24--responsive {
+  @include fs-16-lh-24;
+  @media (min-width: 768px) {
+    @include fs-22-lh-34;
+  }
+}
+
+.fs-22-lh-34--responsive {
+  @include fs-22-lh-34;
+  @media (min-width: 768px) {
+    @include fs-40-lh-56;
+  }
+}
+
+.fs-30-lh-42--responsive {
+  @include fs-30-lh-42;
+  @media (min-width: 768px) {
+    @include fs-52-lh-60;
+  }
+}
+
+// Font-size & Line-height
+.fs-22-lh-34 {
+  @include fs-22-lh-34;
+}
+
+.fs-16-lh-24 {
+  @include fs-16-lh-24;
+}
+
+.fs-16-lh-20 {
+  @include fs-16-lh-20;
+}
+
+.fs-22-lh-34 {
+  @include fs-22-lh-34;
+}
+
+.fs-24-lh-29 {
+  @include fs-24-lh-29;
+}
+
+.fs-40-lh-56 {
+  @include fs-40-lh-56;
+}
