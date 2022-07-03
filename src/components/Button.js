@@ -1,8 +1,8 @@
-function Button() {
+function Button({onClick, text}) {
     return (
-        <div className="button bg-main-color text-white fw-7 fs-16-lh-20">
-            Buy it now
-        </div>
+        <button onClick={onClick} className="button bg-main-color text-white fw-7 fs-16-lh-20">
+            {text}
+        </button>
     );
 }
 

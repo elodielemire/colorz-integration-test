@@ -13,15 +13,21 @@ $black: #18181B;
   background-color: $secondary-color;
 }
 
-// Font-weight
-.fw-3 {
-  font-weight: 300;
+// text-align
+.center {
+  text-align: center;
 }
-.fw-4 {
-  font-weight: 400;
-}
-.fw-7 {
-  font-weight: 700;
+
+$weights : (
+        3: 300,
+        4: 400,
+        7: 700,
+);
+
+@each $name, $value in $weights {
+  .fw-#{$name} {
+    font-weight: $value !important;
+  }
 }
 
 // Mixins
@@ -162,4 +168,22 @@ $black: #18181B;
 
 .fs-40-lh-56 {
   @include fs-40-lh-56;
+}
+
+// Margins
+$marginBottom : (
+        5: 5px,
+        15: 15px,
+        20: 20px,
+        21: 21px,
+        25: 25px,
+        30: 30px,
+        40: 40px,
+        45: 45px,
+);
+
+@each $name, $value in $marginBottom {
+  .mb-#{$name} {
+    margin-bottom: $value !important;
+  }
 }

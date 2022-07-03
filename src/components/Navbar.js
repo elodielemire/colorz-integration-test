@@ -1,6 +1,8 @@
+import Button from "./Button";
+
 function Navbar() {
     return (
-        <div className="navbar">
+        <div className="main-navbar">
             <div className="fs-24-lh-29">
                 Vision.R
             </div>
@@ -14,8 +16,8 @@ function Navbar() {
                 <li className="fs-16-lh-20">
                     High Price
                 </li>
-                <li className="fs-16-lh-20 text-white">
-                    Buy it
+                <li className="fs-16-lh-20">
+                    <Button text="Buy it"></Button>
                 </li>
             </ul>
         </div>

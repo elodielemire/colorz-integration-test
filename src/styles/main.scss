@@ -1,9 +1,59 @@
 @import "typography";
 @import "header";
+@import "navbar";
+@import "button";
+@import "slider";
+@import "swiper";
+@import "swiperCard.scss";
+@import "footer.scss";
+@import "modal";
 
 body {
   font-family: 'Helvetica Neue';
   font-style: normal;
   font-weight: 500;
   color: $black;
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 50px 36px 0 36px;
+}
+
+.section-technology {
+  position: relative;
+  margin-bottom: 344px;
+
+  .screen-img {
+    height: 279px;
+    position: absolute;
+    right: 0;
+  }
+}
+
+.rectangle-img {
+  width: 100%;
+}
+
+.section-locker__text {
+  padding: 30px 36px 60px 36px;
+  .locker-img {
+    width: 33px;
+  }
+}
+
+.section-quote {
+  padding: 51px 36px 82px 36px;
+}
+
+.section-swiper {
+  padding: 50px 0 60px 0;
+
+  &__title {
+    padding: 0 8px;
+  }
 }
