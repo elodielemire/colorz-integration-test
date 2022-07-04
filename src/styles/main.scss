@@ -1,15 +1,7 @@
-@import "typography";
-@import "header";
-@import "navbar";
-@import "button";
-@import "slider";
-@import "swiper";
-@import "swiperCard.scss";
-@import "footer.scss";
-@import "modal";
+@import "imports";
 
 body {
-  font-family: 'Helvetica Neue';
+  font-family: 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-weight: 500;
   color: $black;
@@ -22,16 +14,59 @@ p, h1, h2, h3 {
 
 section {
   padding: 50px 36px 0 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 90px;
+  }
+}
+
+.section-intro {
+  @media (min-width: 768px) {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .section-technology {
   position: relative;
   margin-bottom: 344px;
 
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    margin-bottom: 53px;
+  }
+
+  &__text {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+      &__title {
+        @media (min-width: 768px) {
+          text-align: left;
+          margin-bottom: 19px;
+        }
+    }
+
+    &__subtitle {
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+  }
+
   .screen-img {
     height: 279px;
     position: absolute;
     right: 0;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      height: auto;
+      position: initial;
+    }
   }
 }
 
@@ -39,15 +74,42 @@ section {
   width: 100%;
 }
 
-.section-locker__text {
-  padding: 30px 36px 60px 36px;
-  .locker-img {
-    width: 33px;
+.section-locker {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+
+  &__img {
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+  }
+
+  &__text {
+    padding: 30px 36px 60px 36px;
+
+    @media (min-width: 768px) {
+      width: 50%;
+      padding: 60px;
+    }
+
+    @media (min-width: 1200px) {
+      padding: 189px 104px 60px 124px;
+    }
+
+    .locker-img {
+      width: 33px;
+    }
   }
 }
 
 .section-quote {
   padding: 51px 36px 82px 36px;
+
+  @media (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 142px;
+  }
 }
 
 .section-swiper {

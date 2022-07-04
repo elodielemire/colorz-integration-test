@@ -1,4 +1,36 @@
 .main-navbar {
   padding: 30px 0 40px 0;
   text-align: center;
+
+
+  @media (min-width: 768px) {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 115px;
+
+    ul {
+      list-style: none;
+      right: 106px;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-right: 37px;
+      }
+    }
+
+    &__title {
+      margin-left: 104px;
+    }
+
+    .button {
+      width: 79px;
+      height: 42px;
+      margin: 0;
+      padding: 10px 16px 0;
+    }
+  }
 }

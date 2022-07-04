@@ -1,4 +1,8 @@
 .swiper {
   display: flex;
   overflow: scroll;
+
+  @media (min-width: 1200px) {
+    justify-content: center;
+  }
 }

@@ -2,4 +2,20 @@
   .modal-header {
     border: 0;
   }
+
+  .modal-dialog {
+    @media (min-width: 768px) {
+      max-width: 700px;
+    }
+
+    @media (min-width: 992px) {
+      max-width: 910px;
+    }
+  }
+
+  .modal-body {
+    @media (min-width: 992px) {
+      padding: 50px 158px 80px
+    }
+  }
 }

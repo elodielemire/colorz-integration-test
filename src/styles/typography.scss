@@ -1,7 +1,3 @@
-$main-color: #F0380F;
-$secondary-color: #F4F4F4;
-$black: #18181B;
-
 // Colors
 .main-color {
   color: $main-color;
@@ -26,7 +22,7 @@ $weights : (
 
 @each $name, $value in $weights {
   .fw-#{$name} {
-    font-weight: $value !important;
+    font-weight: $value;
   }
 }
 
@@ -183,7 +179,7 @@ $marginBottom : (
 );
 
 @each $name, $value in $marginBottom {
-  .mb-#{$name} {
-    margin-bottom: $value !important;
+  .mbo-#{$name} {
+    margin-bottom: $value;
   }
 }
