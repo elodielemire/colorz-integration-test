@@ -43,11 +43,11 @@ section {
       width: 50%;
     }
 
-      &__title {
-        @media (min-width: 768px) {
-          text-align: left;
-          margin-bottom: 19px;
-        }
+    &__title {
+      @media (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 19px;
+      }
     }
 
     &__subtitle {

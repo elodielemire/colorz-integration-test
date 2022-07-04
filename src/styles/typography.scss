@@ -2,9 +2,11 @@
 .main-color {
   color: $main-color;
 }
+
 .bg-main-color {
   background-color: $main-color;
 }
+
 .bg-secondary-color {
   background-color: $secondary-color;
 }
@@ -14,7 +16,7 @@
   text-align: center;
 }
 
-$weights : (
+$weights: (
         3: 300,
         4: 400,
         7: 700,
@@ -167,7 +169,7 @@ $weights : (
 }
 
 // Margins
-$marginBottom : (
+$marginBottom: (
         5: 5px,
         15: 15px,
         20: 20px,
