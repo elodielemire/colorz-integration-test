@@ -6,13 +6,13 @@ function Navbar() {
       <div className="main-navbar__title fs-24-lh-29">Vision.R</div>
       <ul className="d-none d-md-flex">
         <li className="fs-16-lh-20">
-          <a>Low Solution</a>
+          <a href="#solution">Low Solution</a>
         </li>
         <li className="fs-16-lh-20">
-          <a>Low Technology</a>
+          <a href="#technology">Low Technology</a>
         </li>
         <li className="fs-16-lh-20">
-          <a>High Price</a>
+          <a href="#price">High Price</a>
         </li>
         <li className="fs-16-lh-20">
           <Button text="Buy it"></Button>

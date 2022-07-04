@@ -30,7 +30,7 @@ function App() {
         <Button onClick={handleShowModal} text="Buy it now" />
         <Popin show={showModal} handleClose={handleCloseModal} />
       </section>
-      <section className="section-technology">
+      <section className="section-technology" id="solution">
         <div className="section-technology__text">
           <p className="section-technology__text__title fs-22-lh-34--responsive center mbo-15">
             The most advanced technology
@@ -44,7 +44,7 @@ function App() {
         <img className="screen-img" src={screenImg} alt="screen" />
       </section>
       <Slider />
-      <div className="section-locker">
+      <div className="section-locker" id="technology">
         <div className="section-locker__img">
           <img className="rectangle-img" alt="rectangle" src={rectangleImg} />
         </div>
@@ -65,7 +65,7 @@ function App() {
         </p>
         <p className="text-white fw-4 fs-16-lh-24">Jean-Claude Van Damme</p>
       </div>
-      <section className="section-swiper">
+      <section className="section-swiper" id="price">
         <p className="section-swiper__title fs-30-lh-42--responsive center mbo-40">
           Some indispensables accessoires to optimize your experience
         </p>

@@ -12,6 +12,11 @@ p, h1, h2, h3 {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: $black;
+}
+
 section {
   padding: 50px 36px 0 36px;
 
